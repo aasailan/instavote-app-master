@@ -13,6 +13,7 @@ services:
     image: redis:alpine
     ports: ["6379"]
 
+  # 这个worker是用c#写的真是奇怪
   worker:
     build: ./worker
 
@@ -21,7 +22,9 @@ services:
 
   result:
     build: ./result
+    # nodemon 应用可以自动监控nodejs应用，检测到变化后自动restart应用
     command: nodemon --debug server.js
+    # 将result挂载到容器内app，当result内代码改变的时候，容器内app自动restart。实现对容器内的应用的调试
     volumes:
       - ./result:/app
     ports:

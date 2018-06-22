@@ -6,6 +6,7 @@ RUN npm install -g nodemon
 ADD package.json /app/package.json
 RUN npm config set registry http://registry.npmjs.org
 RUN npm install && npm ls
+# 这有什么意义呢？
 RUN mv /app/node_modules /node_modules
 
 ADD . /app
