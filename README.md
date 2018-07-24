@@ -1,3 +1,5 @@
+本项目是docker2016年发布大会上，被用来做debug in docker演示的项目。原项目的仓库已经被删除。我在github上搜到了这个仓库fork下来，以便保存。有兴趣的同学可以去youtobe看一下这个[**发布会视频**](https://www.youtube.com/watch?v=vE1iDPx6-Ok&feature=youtu.be&list=PLkA60AVN3hh9gnrYwNO6zTb9U3i1Y9FMY&t=2088)。自备梯子哦^^!。
+
 Instavote
 =========
 
